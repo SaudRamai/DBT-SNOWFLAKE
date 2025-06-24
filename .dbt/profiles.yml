@@ -1,0 +1,13 @@
+dbt_demo:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake           
+      account: STKARLN-DX34779
+      user: dbt_user
+      password: StrongPasswordHere
+      role: dbt_role
+      warehouse: dbt_wh
+      database: dbt_demo_db
+      schema: TRANSFORMED
+      threads: 4
